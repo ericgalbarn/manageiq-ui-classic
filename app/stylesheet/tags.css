@@ -1,0 +1,66 @@
+.tagging-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tagging-container .tagging-row-wrapper {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+.tagging-container .tagging-row-wrapper .tagging-form {
+  display: flex;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer #assignments_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-header {
+  background: lightgray;
+  margin: 0;
+  padding: 5px 0;
+  width: 100%;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-header h3 {
+  margin: 10px 0;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form {
+  padding: 15px;
+  max-height: 400px;
+  width: 100%;
+  width: 100%;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form.assigned-tags {
+  overflow-y: auto;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form.assigned-tags .alert {
+  width: 100%;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form fieldset {
+  margin: 5px 0;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form fieldset legend {
+  font-size: 14px;
+}
+.tagging-container .tagging-row-wrapper .tagging-block-outer .tag-modifier-form fieldset .tag-modifier-form-row {
+  padding: 0;
+}
+.tagging-container .tagging-row-wrapper.tagging-toolbar .btn-toolbar {
+  width: 100%;
+}
+.tagging-container .tagging-row-wrapper.tagging-toolbar .btn-toolbar .bx--btn-set {
+  margin-right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}/*# sourceMappingURL=tags.css.map */

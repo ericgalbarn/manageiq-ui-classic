@@ -1,0 +1,10 @@
+.dynamic-prefix-input {
+  display: flex;
+}
+.dynamic-prefix-input .final-form-select {
+  min-width: 100px;
+}
+.dynamic-prefix-input .input-group {
+  flex-grow: 1;
+  margin-left: 8px;
+}/*# sourceMappingURL=dynamic_prefix_form_input.css.map */

@@ -1514,7 +1514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/request@npm:^2.88.11":
+"@cypress/request@npm:2.88.12":
   version: 2.88.12
   resolution: "@cypress/request@npm:2.88.12"
   dependencies:
@@ -2584,10 +2584,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.31":
-  version: 14.18.63
-  resolution: "@types/node@npm:14.18.63"
-  checksum: 10/82a7775898c2ea6db0b610a463512206fb2c7adc1af482c7eb44b99d94375fff51c74f67ae75a63c5532971159f30c866a4d308000624ef02fd9a7175e277019
+"@types/node@npm:^16.18.39":
+  version: 16.18.126
+  resolution: "@types/node@npm:16.18.126"
+  checksum: 10/33e0fa9209a4a96459a8fdf6b078ca9590eb67a8d51899180cfac8afecb9aa133c755d1c38a8b947b9f384f2faa184cabf4e567f5f6dded285be1b31588ec199
   languageName: node
   linkType: hard
 
@@ -5813,13 +5813,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:12.17.1":
-  version: 12.17.1
-  resolution: "cypress@npm:12.17.1"
+"cypress@npm:^12.17.1":
+  version: 12.17.4
+  resolution: "cypress@npm:12.17.4"
   dependencies:
-    "@cypress/request": "npm:^2.88.11"
+    "@cypress/request": "npm:2.88.12"
     "@cypress/xvfb": "npm:^1.2.4"
-    "@types/node": "npm:^14.14.31"
+    "@types/node": "npm:^16.18.39"
     "@types/sinonjs__fake-timers": "npm:8.1.1"
     "@types/sizzle": "npm:^2.3.2"
     arch: "npm:^2.2.0"
@@ -5852,6 +5852,7 @@ __metadata:
     minimist: "npm:^1.2.8"
     ospath: "npm:^1.2.2"
     pretty-bytes: "npm:^5.6.0"
+    process: "npm:^0.11.10"
     proxy-from-env: "npm:1.0.0"
     request-progress: "npm:^3.0.0"
     semver: "npm:^7.5.3"
@@ -5861,7 +5862,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10/be0969781f556d9a143537fec5f8297c4c6409067769ca466f761f5ae4a0685838db4f92644bec5abab364642e61ca9b967bac13fc7104266904582cc0e08329
+  checksum: 10/bddf5c8d717c79b122fb1269e0e31ae79fcd6c2b5c140e7d327a194b4cb2f6b00071a12541e1bea9cebad165ffc028f43db6ca75d8d2ca90c4632109238bd22a
   languageName: node
   linkType: hard
 
@@ -11644,7 +11645,7 @@ __metadata:
     core-js-compat: "npm:~3.2.1"
     create-react-context: "npm:~0.3.0"
     css-loader: "npm:~3.4.2"
-    cypress: "npm:12.17.1"
+    cypress: "npm:^12.17.1"
     d3: "npm:^7.8.2"
     dompurify: "npm:^3.2.4"
     duplicate-package-checker-webpack-plugin: "npm:~3.0.0"

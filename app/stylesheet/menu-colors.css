@@ -1,0 +1,71 @@
+.bx--side-nav {
+  background-color: red;
+}
+.bx--side-nav .bx--side-nav__link.force-hover,
+.bx--side-nav .bx--side-nav__link:hover,
+.bx--side-nav .bx--side-nav__link.bx--side-nav__link--current {
+  background-color: blue;
+}
+.bx--side-nav.secondary {
+  background-color: purple;
+}
+.bx--side-nav.secondary .bx--side-nav__item--active > .bx--side-nav__submenu,
+.bx--side-nav.secondary .bx--side-nav__link.bx--side-nav__link--current,
+.bx--side-nav.secondary .bx--side-nav__link.force-hover,
+.bx--side-nav.secondary .bx--side-nav__link:hover,
+.bx--side-nav.secondary .bx--side-nav__submenu[aria-expanded="false"]:hover {
+  background-color: green;
+}
+.bx--side-nav__link-text,
+.bx--side-nav__submenu-title,
+li.menu-group {
+  color: gray;
+}
+.bx--side-nav__icon > svg,
+.menu-collapse-button > svg,
+.menu-group svg,
+.menu-search > svg,
+.menu-user svg {
+  fill: #adff2f;
+}
+.bx--side-nav__icon > i {
+  color: orange;
+}
+.bx--side-nav__hr {
+  color: #ff4500;
+}
+.menu-user {
+  color: red;
+}
+.menu-search .bx--search-input {
+  background-color: red;
+  color: blue;
+}
+.menu-search .bx--search-input:focus ~ .bx--search-close:hover {
+  outline: 2px solid #8a2be2;
+  outline-offset: -2px;
+}
+.menu-search button.bx--search-close {
+  fill: beige;
+}
+.menu-search button.bx--search-close::before {
+  background-color: green;
+}
+.menu-search button.bx--search-close:hover {
+  background: #008b8b;
+}
+.menu-search button.bx--search-close:focus {
+  outline: 2px solid aqua;
+  outline-offset: -2px;
+}
+.menu-search button.bx--search-close:focus::before {
+  background-color: red;
+}
+.menu-search button.bx--search-close:active {
+  outline: 2px solid rgba(0, 0, 0, 0);
+  outline-offset: -2px;
+  background-color: crimson;
+}
+.menu-search .bx--label {
+  color: gray;
+}

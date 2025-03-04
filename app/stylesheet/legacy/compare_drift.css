@@ -1,0 +1,40 @@
+#compare-grid .table-expanded,
+#compare-grid .table-compressed {
+  max-width: auto !important;
+  table-layout: fixed !important;
+  text-align: center;
+  width: auto !important;
+  word-wrap: break-word !important;
+}
+#compare-grid .table-expanded .treegrid-node,
+#compare-grid .table-compressed .treegrid-node {
+  text-align: left;
+  white-space: nowrap !important;
+  width: 270px !important;
+}
+#compare-grid .table-compressed thead tr th,
+#compare-grid .table-compressed tbody tr td {
+  width: 26px !important;
+}
+#compare-grid .table-compressed thead tr th {
+  white-space: nowrap;
+}
+#compare-grid .table-compressed thead tr th .rotated-text {
+  transform: translate(0, 110px) rotate(270deg);
+  width: 26px;
+}
+#compare-grid .table-compressed tbody tr td .piechart {
+  margin-left: 5px;
+}
+#compare-grid .table-expanded thead tr th,
+#compare-grid .table-expanded tbody tr td {
+  min-width: 175px !important;
+  width: 175px !important;
+}
+#compare-grid .table-expanded thead tr th {
+  position: relative;
+  text-align: center;
+}
+#compare-grid .table-expanded tbody tr td .piechart {
+  margin-left: 67px;
+}/*# sourceMappingURL=compare_drift.css.map */

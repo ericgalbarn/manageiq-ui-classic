@@ -1,0 +1,98 @@
+div.miq-quadicon {
+  display: block;
+  display: flow-root;
+  border-radius: 6px;
+  color: white;
+  height: 78px;
+  overflow: hidden;
+  width: 78px;
+}
+@supports not (display: flow-root) {
+  div.miq-quadicon::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+div.miq-quadicon > div.quad-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background: linear-gradient(180deg, rgb(144, 142, 143) 0%, rgb(87, 87, 87) 62%, rgb(64, 64, 65) 100%);
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem {
+  display: flex;
+  flex: 0 0 50%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  height: 39px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .piechart {
+  width: 30px;
+  height: 30px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .fileicon img {
+  height: 31.5714285714px;
+  width: 31.5714285714px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .fonticon,
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .text {
+  font-size: 21.6666666667px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .text.font-small {
+  font-size: 17.3333333333px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem .text.font-tiny {
+  font-size: 13px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.top-left {
+  box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.top-right {
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.6);
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.bottom-left {
+  box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.bottom-right {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.middle {
+  flex: 0 0 100%;
+  margin-top: -58.5px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.middle .fileicon img {
+  height: 31.5714285714px;
+  width: 31.5714285714px;
+}
+div.miq-quadicon > div.quad-wrapper > div.miq-quaditem.middle .fonticon {
+  font-size: 31.2px;
+}
+div.miq-quadicon > div.single-wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(144, 142, 143) 0%, rgb(87, 87, 87) 62%, rgb(64, 64, 65) 100%);
+  height: 78px;
+}
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .fileicon img {
+  height: 58.5px;
+  width: 58.5px;
+}
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .piechart {
+  width: 60px;
+  height: 60px;
+}
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .fonticon,
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .text {
+  font-size: 52px;
+}
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .text.font-small {
+  font-size: 26px;
+}
+div.miq-quadicon > div.single-wrapper > div.miq-quaditem .text.font-tiny {
+  font-size: 17.3333333333px;
+}/*# sourceMappingURL=quadicon.css.map */

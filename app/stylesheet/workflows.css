@@ -1,0 +1,27 @@
+.workflow-states-list-container {
+  margin-bottom: 20px;
+}
+.workflow-states-list-container .workflow-states-container {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+}
+.workflow-states-list-container .workflow-states-container:last-child {
+  border-bottom: 1px solid lightgray;
+}
+.workflow-states-list-container .workflow-states-container .workflow-status-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.workflow-states-list-container .workflow-states-container .workflow-status-container .workflow-status-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.workflow-states-list-container .workflow-states-container .workflow-status-container .workflow-status-tag {
+  margin-right: 5px;
+}
+.workflow-states-list-container .workflow-states-container .workflow-notification-container {
+  margin-top: 10px;
+}/*# sourceMappingURL=workflows.css.map */

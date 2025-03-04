@@ -1,10 +1,10 @@
 #main-menu {
-  @import '~@carbon/themes/scss/themes';
+  @import "~@carbon/themes/scss/themes";
   $carbon--theme: $carbon--theme--g90;
 
   @include carbon--theme();
 
-  @import './menu-colors.scss';
+  @import "./menu-colors.scss";
 
   *:focus {
     outline-color: $focus;
@@ -92,7 +92,7 @@
 
   .menu-user,
   .menu-group li {
-    @include carbon--type-style('helper-text-01');
+    @include carbon--type-style("helper-text-01");
   }
 
   .vertical-center {
@@ -148,6 +148,7 @@
   }
 
   .bx--side-nav__item {
+    color: hotpink;
     .bx--tooltip__trigger {
       position: fixed;
 

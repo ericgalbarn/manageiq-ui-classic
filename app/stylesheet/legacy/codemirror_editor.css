@@ -1,0 +1,9 @@
+.miq-codemirror {
+  border: 1px solid transparent;
+}
+.miq-codemirror .CodeMirror {
+  height: auto;
+}
+.miq-codemirror.has-error {
+  border-color: #cc0000;
+}/*# sourceMappingURL=codemirror_editor.css.map */

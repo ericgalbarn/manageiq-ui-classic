@@ -1,0 +1,23 @@
+.no-records-found {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 120px;
+  width: 100%;
+}
+.no-records-found .icon {
+  align-items: center;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.no-records-found .label {
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  color: gray;
+  font-size: 24px;
+  justify-content: center;
+}/*# sourceMappingURL=no-records-found.css.map */

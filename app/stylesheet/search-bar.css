@@ -1,0 +1,24 @@
+.miq-filter-provision-instance {
+  display: flex;
+  align-items: center;
+}
+.miq-filter-provision-instance .checkbox_wrapper {
+  padding-left: 0;
+}
+.miq-filter-provision-instance .search_bar_wrapper {
+  padding-right: 0;
+}
+
+.search_bar {
+  display: flex;
+}
+.search_bar .bx--text-input {
+  height: 48px;
+}
+.search_bar form {
+  width: 100%;
+  display: flex;
+}
+.search_bar .search_button {
+  margin-right: 2px;
+}/*# sourceMappingURL=search-bar.css.map */

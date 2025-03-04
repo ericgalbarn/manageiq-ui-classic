@@ -1,0 +1,199 @@
+.dropdown-kebab-pf .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+.dropdown-kebab-pf .dropdown-submenu .dropdown-menu::after,
+.dropdown-kebab-pf .dropdown-submenu .dropdown-menu::before {
+  border: none;
+}
+.dropdown-kebab-pf .dropdown-submenu .dropdown-menu a:empty {
+  display: none;
+}
+
+.miq-toolbar-actions {
+  margin-top: -10px;
+  margin-left: -20px; /* this compensates for toolbar-pf-filter not being in the first position */
+}
+.miq-toolbar-actions .bx--overflow-menu {
+  width: 100%;
+  padding: 0 3rem 0 1rem;
+  max-width: 30rem;
+  font-size: 14px;
+}
+.miq-toolbar-actions .bx--overflow-menu .toolbar-overflow span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  overflow: hidden;
+  color: #161616;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.miq-toolbar-actions .bx--overflow-menu .toolbar-overflow svg {
+  right: 15px;
+  position: absolute;
+  top: 10px;
+}
+.miq-toolbar-actions .form-group {
+  margin-top: 10px;
+  padding-left: 20px;
+  display: inline-flex;
+  padding-right: 15px; /* adjusted to account for button margin */
+  white-space: nowrap;
+  height: 40px;
+}
+.miq-toolbar-actions .form-group .toolbar-button {
+  background-color: inherit;
+  border: none;
+  background-image: none;
+  box-shadow: none;
+}
+.miq-toolbar-actions .form-group .toolbar-button:hover {
+  background-color: #e5e5e5;
+}
+.miq-toolbar-actions .form-group .btn {
+  /* margin for buttons (not part of Patternfly) */
+  margin-right: 5px;
+}
+.miq-toolbar-actions .form-group .btn i {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.miq-custom-html .form-group.text,
+.miq-custom-html .form-group.has-clear {
+  padding-right: 20px;
+}
+
+.kebab .btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
+.miq-toolbar-group .dropdown-menu > li.disabled > a:active {
+  color: #9c9c9c !important;
+}
+
+.bx--overflow-menu-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  width: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.bx--overflow-menu-options ::after {
+  top: unset;
+}
+.bx--overflow-menu-options .bx--overflow-menu-options__option {
+  height: unset;
+}
+.bx--overflow-menu-options .bx--overflow-menu-options__btn {
+  display: block;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.66666667;
+  color: #363636;
+  white-space: nowrap;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px 0;
+  padding: 1px 10px;
+  max-width: unset;
+}
+.bx--overflow-menu-options
+  .bx--overflow-menu-options__option--disabled
+  .bx--overflow-menu-options__btn {
+  color: #c6c6c6;
+  pointer-events: inherit;
+}
+.bx--overflow-menu-options .bx--side-nav__menu-item {
+  list-style: none;
+}
+.bx--overflow-menu-options .bx--side-nav__menu {
+  padding-left: 0;
+}
+.bx--overflow-menu-options
+  .bx--side-nav__item.bx--side-nav__item--icon
+  a.bx--side-nav__link {
+  padding-left: 2rem;
+}
+
+a.bx--side-nav__link {
+  outline: 2px solid green;
+}
+
+a {
+  background-color: red;
+}
+
+.bx--overflow-menu-options[data-floating-menu-direction="bottom"]::after {
+  top: unset;
+  width: unset;
+}
+
+.overflow-menu-disabled {
+  outline: none;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: transparent;
+}
+.overflow-menu-disabled span {
+  color: #c6c6c6 !important;
+}
+.overflow-menu-disabled svg {
+  fill: #c6c6c6 !important;
+}
+.overflow-menu-disabled:hover {
+  background-color: transparent;
+}
+
+#dropdown-custom-2 svg {
+  position: absolute;
+  top: 10px;
+  margin-left: 15px;
+}
+
+.refresh_button {
+  margin-left: 20px;
+  background-color: inherit;
+  border: none;
+  background-image: none;
+  box-shadow: none;
+}
+.refresh_button:hover {
+  background-color: #e5e5e5;
+}
+
+.scrollable-options {
+  overflow-y: scroll !important;
+  max-height: 610px !important;
+}
+
+.bx--overflow-menu--divider .scrollable-menu {
+  display: none;
+}
+
+.btn-toolbar .bx--btn-set {
+  margin-right: 400px;
+}
+.btn-toolbar .bx--btn {
+  margin-left: 10px;
+}
+
+.hr-tag {
+  margin-top: 80px;
+} /*# sourceMappingURL=toolbar.css.map */

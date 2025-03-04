@@ -1,0 +1,42 @@
+.attribute-value-field-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.attribute-value-field-row .attribute-value-row-count {
+  min-width: 30px;
+  align-items: center;
+  display: flex;
+  height: 48px;
+}
+
+.bx--list-box__wrapper {
+  margin-bottom: 2rem;
+}
+
+.evacuate_form div:has(.bx--checkbox-wrapper), .schedule_form div:has(.bx--checkbox-wrapper), .live_migrate_form div:has(.bx--checkbox-wrapper) {
+  margin-bottom: 2rem;
+}
+
+.bx--form-item.bx--checkbox-wrapper {
+  margin-bottom: 0.25rem !important;
+}
+
+.evacuate_form label[for=destination_host]:before {
+  content: "* ";
+  color: red;
+}
+
+.schedule_form label[for=time_zone]:before, .schedule_form label[for=target_class]:before, .schedule_form label[for=target_id]:before {
+  content: "* ";
+  color: red;
+}
+
+.live_migrate_form label[for=destination_host]:before {
+  content: "* ";
+  color: red;
+}
+
+.bx--front-line {
+  margin-left: 10px;
+}/*# sourceMappingURL=settings.css.map */

@@ -1,0 +1,18 @@
+#breadcrumbs div[id*=react] {
+  display: flex;
+}
+#breadcrumbs div[id*=react] nav {
+  display: flex;
+  flex-grow: 1;
+}
+#breadcrumbs div[id*=react] nav ol li.inactive-item {
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+#breadcrumbs div[id*=react] nav ol li.inactive-item::after {
+  margin-left: 0.5rem;
+  content: "/";
+}/*# sourceMappingURL=breadcrumbs.css.map */

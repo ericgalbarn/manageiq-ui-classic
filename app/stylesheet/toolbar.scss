@@ -21,7 +21,7 @@
 
 .miq-toolbar-actions {
   margin-top: -10px;
-  margin-left: -20px;  /* this compensates for toolbar-pf-filter not being in the first position */
+  margin-left: -20px; /* this compensates for toolbar-pf-filter not being in the first position */
   .bx--overflow-menu {
     width: 100%;
     padding: 0 3rem 0 1rem;
@@ -67,7 +67,8 @@
       }
     }
 
-    .btn { /* margin for buttons (not part of Patternfly) */
+    .btn {
+      /* margin for buttons (not part of Patternfly) */
       margin-right: 5px;
 
       i {
@@ -154,7 +155,7 @@
   }
 }
 
-.bx--overflow-menu-options[data-floating-menu-direction=bottom]::after {
+.bx--overflow-menu-options[data-floating-menu-direction="bottom"]::after {
   top: unset;
   width: unset;
 }

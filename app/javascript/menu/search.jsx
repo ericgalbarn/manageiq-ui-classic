@@ -1,10 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Search from 'carbon-components-react/es/components/Search';
-import { Search20 } from '@carbon/icons-react';
-import { SideNavItems, SideNavItem } from 'carbon-components-react/es/components/UIShell';
-import TooltipIcon from 'carbon-components-react/es/components/TooltipIcon';
+import Search from "carbon-components-react/es/components/Search";
+import { Search20 } from "@carbon/icons-react";
+import {
+  SideNavItems,
+  SideNavItem,
+} from "carbon-components-react/es/components/UIShell";
+import TooltipIcon from "carbon-components-react/es/components/TooltipIcon";
 
 export const flatten = (menuItems = []) => {
   const flat = [];
@@ -27,16 +30,16 @@ export const flatten = (menuItems = []) => {
   return flat;
 };
 
-const MenuSearch = ({
-  expanded, menu, onSearch, toggle,
-}) => {
+const MenuSearch = ({ expanded, menu, onSearch, toggle }) => {
   if (!expanded) {
     return (
       <div className="menu-search">
         <SideNavItems>
           <SideNavItem className="padded vertical-center">
             <fieldset className="miq-fieldset">
-              <legend className="miq-fieldset-legend legend-search">{expanded ? __('Choose a Filter') : undefined}</legend>
+              <legend className="miq-fieldset-legend legend-search">
+                {expanded ? __("Choose a Filter") : undefined}
+              </legend>
               <div className="miq-fieldset-content">
                 <div
                   tabIndex="0"
@@ -45,10 +48,7 @@ const MenuSearch = ({
                   onClick={toggle}
                   onKeyPress={toggle}
                 >
-                  <TooltipIcon
-                    direction="right"
-                    tooltipText={__('Find')}
-                  >
+                  <TooltipIcon direction="right" tooltipText={__("Find")}>
                     <Search20 />
                   </TooltipIcon>
                 </div>
@@ -62,7 +62,7 @@ const MenuSearch = ({
 
   const flatMenu = flatten(menu).map(({ item, parents }) => {
     const titles = [...parents, item].map((p) => p.title);
-    const haystack = titles.join(' ').toLocaleLowerCase();
+    const haystack = titles.join(" ").toLocaleLowerCase();
 
     return {
       haystack,
@@ -89,12 +89,14 @@ const MenuSearch = ({
       <SideNavItems>
         <SideNavItem className="padded">
           <fieldset className="miq-fieldset">
-            <legend className="miq-fieldset-legend legend-search">{__('Choose a Filter')}</legend>
+            <legend className="miq-fieldset-legend legend-search">
+              {__("Choose a Filter")}
+            </legend>
             <div className="miq-fieldset-content">
               <Search
                 size="sm"
-                placeholder={__('Find')}
-                labelText={__('Find') /* hidden in css */}
+                placeholder={__("Find")}
+                labelText={__("Find") /* hidden in css */}
                 onChange={(event) => searchResults(event.target.value)}
               />
             </div>
@@ -107,9 +109,11 @@ const MenuSearch = ({
 
 MenuSearch.propTypes = {
   expanded: PropTypes.bool.isRequired,
-  menu: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-  })).isRequired,
+  menu: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   onSearch: PropTypes.func,
   toggle: PropTypes.func,
 };

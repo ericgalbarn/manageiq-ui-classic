@@ -1,0 +1,12 @@
+.worker_schema_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px !important;
+}
+.worker_schema_row > div:first-child {
+  flex-basis: 100%;
+}
+.worker_schema_row > div:nth-child(n+2):nth-last-child(-n+2) {
+  flex-basis: calc(50% - 10px);
+  margin-right: 10px;
+}/*# sourceMappingURL=workers.style.css.map */

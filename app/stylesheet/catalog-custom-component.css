@@ -1,0 +1,56 @@
+.catalog-custom-component-wrapper {
+  padding-left: 15px;
+  border-top: 1px solid lightgray;
+}
+.catalog-custom-component-wrapper .custom-component-title {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.77rem 0;
+  margin: 0;
+}
+.catalog-custom-component-wrapper .custom-image-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.catalog-custom-component-wrapper .custom-image-wrapper .custom-image {
+  height: 100px;
+  min-width: 180px;
+  margin: 0 15px 0 0;
+}
+.catalog-custom-component-wrapper .custom-image-wrapper .custom-image img {
+  max-height: 100%;
+}
+
+.key-value-list-component-wrapper .key-value-list-pair {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.key-value-list-component-wrapper .key-value-list-pair .key-value-delete {
+  height: 20px;
+  top: 20px;
+}
+
+.markdown-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 10px;
+  min-height: 550px;
+  box-sizing: border-box;
+}
+.markdown-wrapper .markdown-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  width: 50%;
+}
+.markdown-wrapper .markdown-section .markdown-section-title {
+  padding: 10px;
+  background: lightgray;
+  font-size: 16px;
+}
+.markdown-wrapper #preview .markdown-section-content {
+  padding: 10px;
+}/*# sourceMappingURL=catalog-custom-component.css.map */

@@ -1,0 +1,123 @@
+.piechart {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #92d400;
+  background-image: linear-gradient(to right, transparent 50%, #cc0000 0);
+}
+.piechart.invert {
+  background: #cc0000;
+  background-image: linear-gradient(to right, transparent 50%, #92d400 0);
+}
+.piechart::before {
+  content: "";
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0/50%;
+  background-color: inherit;
+  transform-origin: left;
+}
+.piechart.fill-0::before {
+  transform: rotate(0turn);
+}
+.piechart.fill-1::before {
+  transform: rotate(0.05turn);
+}
+.piechart.fill-2::before {
+  transform: rotate(0.1turn);
+}
+.piechart.fill-3::before {
+  transform: rotate(0.15turn);
+}
+.piechart.fill-4::before {
+  transform: rotate(0.2turn);
+}
+.piechart.fill-5::before {
+  transform: rotate(0.25turn);
+}
+.piechart.fill-6::before {
+  transform: rotate(0.3turn);
+}
+.piechart.fill-7::before {
+  transform: rotate(0.35turn);
+}
+.piechart.fill-8::before {
+  transform: rotate(0.4turn);
+}
+.piechart.fill-9::before {
+  transform: rotate(0.45turn);
+}
+.piechart.fill-10::before {
+  transform: rotate(0.5turn);
+}
+.piechart.fill-11::before {
+  background: #cc0000;
+  transform: rotate(0.05turn);
+}
+.piechart.fill-11.invert::before {
+  background: #92d400;
+}
+.piechart.fill-12::before {
+  background: #cc0000;
+  transform: rotate(0.1turn);
+}
+.piechart.fill-12.invert::before {
+  background: #92d400;
+}
+.piechart.fill-13::before {
+  background: #cc0000;
+  transform: rotate(0.15turn);
+}
+.piechart.fill-13.invert::before {
+  background: #92d400;
+}
+.piechart.fill-14::before {
+  background: #cc0000;
+  transform: rotate(0.2turn);
+}
+.piechart.fill-14.invert::before {
+  background: #92d400;
+}
+.piechart.fill-15::before {
+  background: #cc0000;
+  transform: rotate(0.25turn);
+}
+.piechart.fill-15.invert::before {
+  background: #92d400;
+}
+.piechart.fill-16::before {
+  background: #cc0000;
+  transform: rotate(0.3turn);
+}
+.piechart.fill-16.invert::before {
+  background: #92d400;
+}
+.piechart.fill-17::before {
+  background: #cc0000;
+  transform: rotate(0.35turn);
+}
+.piechart.fill-17.invert::before {
+  background: #92d400;
+}
+.piechart.fill-18::before {
+  background: #cc0000;
+  transform: rotate(0.4turn);
+}
+.piechart.fill-18.invert::before {
+  background: #92d400;
+}
+.piechart.fill-19::before {
+  background: #cc0000;
+  transform: rotate(0.45turn);
+}
+.piechart.fill-19.invert::before {
+  background: #92d400;
+}
+.piechart.fill-20::before {
+  background: #cc0000;
+  transform: rotate(0.5turn);
+}
+.piechart.fill-20.invert::before {
+  background: #92d400;
+}/*# sourceMappingURL=piecharts.css.map */

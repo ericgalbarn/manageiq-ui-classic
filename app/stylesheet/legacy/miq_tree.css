@@ -1,0 +1,25 @@
+.treeview > .list-group .list-group-item.strikethrough {
+  text-decoration: line-through;
+}
+.treeview > .list-group .list-group-item.red {
+  color: red;
+}
+.treeview > .list-group .list-group-item.opacity {
+  opacity: 0.4;
+}
+.treeview > .list-group .list-group-item.no-cursor {
+  cursor: default !important;
+}
+
+.react-tree-view .strikethrough {
+  text-decoration: line-through;
+}
+.react-tree-view .red {
+  color: red;
+}
+.react-tree-view .opacity {
+  opacity: 0.4;
+}
+.react-tree-view .no-cursor {
+  cursor: default !important;
+}/*# sourceMappingURL=miq_tree.css.map */

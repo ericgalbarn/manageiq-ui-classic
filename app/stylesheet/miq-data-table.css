@@ -1,0 +1,323 @@
+:root {
+  --green: #2d7623;
+  --red: #cc0000;
+  --yellow: #ec7a08;
+}
+
+.tenant-quota-data-table .miq-data-table {
+  margin-bottom: 32px;
+}
+.tenant-quota-data-table .bx--btn-set {
+  margin-bottom: 48px;
+}
+.tenant-quota-data-table .bx--data-table thead tr :first-child {
+  padding-right: 2rem;
+}
+.tenant-quota-data-table .bx--form-item .bx--front-line, .tenant-quota-data-table .bx--form-item .bx--label, .tenant-quota-data-table .bx--form-item .bx--toggle-input {
+  display: none;
+}
+.tenant-quota-data-table .bx--form-item .bx--toggle-input__label {
+  margin-bottom: 0px;
+}
+.tenant-quota-data-table .bx--form-item .bx--toggle-input__label .bx--toggle__switch {
+  margin-top: 0px;
+}
+
+.timeline-data-table {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.miq-data-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.miq-data-table .bx--data-table-content {
+  overflow-x: visible;
+}
+.miq-data-table thead tr th.bx--table-column-checkbox {
+  min-width: 45px;
+  vertical-align: middle;
+}
+.miq-data-table thead tr th .bx--table-header-label {
+  line-height: 20px;
+  white-space: nowrap;
+}
+.miq-data-table tbody tr.clickable-row {
+  cursor: pointer;
+}
+.miq-data-table tbody tr .cell {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.miq-data-table tbody tr .cell.vertical_align_top {
+  vertical-align: top;
+  align-items: flex-start;
+}
+.miq-data-table tbody tr .cell.truncate_cell {
+  max-width: 700px;
+  min-width: 150px;
+}
+.miq-data-table tbody tr .cell .array_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.miq-data-table tbody tr .cell .array_list .list_row {
+  padding: 0.5rem 0;
+}
+.miq-data-table tbody tr .cell .image {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.miq-data-table tbody tr .cell .icon {
+  min-width: 30px;
+  max-height: 30px;
+  height: 30px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -2px;
+}
+.miq-data-table tbody tr .cell .icon.styled_icon {
+  min-width: 20px;
+  height: 20px;
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 2px;
+  font-size: 14px;
+}
+.miq-data-table tbody tr .cell .icon.styled_icon_margin {
+  margin-top: 9px;
+}
+.miq-data-table tbody tr .cell .icon.fa-ruby {
+  color: var(--red) !important;
+}
+.miq-data-table tbody tr .cell span {
+  display: flex;
+  align-items: center;
+}
+.miq-data-table tbody tr .cell button {
+  padding: 0;
+  margin: -5px 0 0 0;
+}
+.miq-data-table tbody tr .cell button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 8px;
+  min-width: 100px;
+}
+.miq-data-table tbody tr td {
+  vertical-align: top;
+  padding-top: 10px;
+}
+.miq-data-table tbody tr td.no_text {
+  width: 50px;
+}
+.miq-data-table tbody tr td .bx--front-line {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+.miq-data-table tbody tr td .bx--front-line.white_space_normal {
+  white-space: normal !important;
+  margin-bottom: 10px;
+}
+.miq-data-table tbody tr td .bx--front-line.truncate_longer_text {
+  max-height: 300px;
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.credential-mapper-data-table tbody tr td {
+  vertical-align: middle;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+.credential-mapper-data-table tbody tr td .bx--front-line {
+  margin-top: 0%;
+}
+
+#iso_datastore_details_div tbody tr .cell.truncate_cell {
+  max-width: 1000px;
+}
+
+.chargeback-rate table tbody tr td {
+  vertical-align: top !important;
+}
+
+.time-profile-reports {
+  padding-bottom: 20px;
+}
+
+.report-data-table table tr td {
+  padding: 0 !important;
+}
+.report-data-table table tr td .cell {
+  min-height: 47px;
+  padding-left: 10px;
+}
+
+.prov-vm-grid-data-table table tr td, .prov-vm-grid-data-table table tr th {
+  font-size: 0.75rem;
+}
+
+.requests-table .miq-data-table .bx--data-table--sticky-header thead, .requests-table .miq-data-table .bx--data-table--sticky-header tbody, .requests-table .miq-data-table .bx--data-table--sticky-header tr, .requests-table .miq-data-table .bx--data-table--sticky-header th, .requests-table .miq-data-table .bx--data-table--sticky-header td {
+  display: revert;
+}
+.requests-table .miq-data-table .clickable-row {
+  vertical-align: top;
+}
+.requests-table .miq-data-table .clickable-row td:nth-child(3) .bx--front-line {
+  white-space: pre;
+}
+.requests-table .miq-data-table .clickable-row td {
+  vertical-align: inherit;
+}
+.requests-table .miq-data-table thead tr th {
+  vertical-align: middle;
+}
+.requests-table .miq-data-table thead tr th .bx--table-header-label {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.provision-instance-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.provision-instance-container .provision-instance-list {
+  height: calc(100vh - 200px);
+  overflow: auto;
+}
+.provision-instance-container .provision-instance-list .miq-data-table {
+  margin-top: 0;
+}
+.provision-instance-container .provision-instance-actions #pre_prov_form_buttons_div {
+  display: flex;
+  justify-content: end;
+}
+
+table.miq_preview tbody tr td.group {
+  background: lightgray;
+  font-weight: bold;
+}
+table.miq_preview tbody tr td.group:hover {
+  background: lightgray;
+}
+table.miq_preview tbody tr td.group_spacer {
+  background: #FFF;
+}
+table.miq_preview tbody tr td.group_spacer:hover {
+  background: #FFF;
+}
+
+.settings-company-tags-list, .settings-company-categories-list {
+  margin-bottom: 20px;
+}
+.settings-company-tags-list table thead tr th:last-child, .settings-company-categories-list table thead tr th:last-child {
+  width: 135px;
+}
+
+.header-button {
+  width: 100px !important;
+}
+
+.action-cell-holder {
+  max-width: 150px !important;
+}
+
+.reconfigure-form .reconfigure-sub-form {
+  display: flex;
+  gap: 20px;
+}
+.reconfigure-form .reconfigure-form-table {
+  margin-bottom: 2rem;
+}
+.reconfigure-form .reconfigure-form-table .form-section-title {
+  display: flex;
+}
+.reconfigure-form .reconfigure-form-table .form-section-title h3 {
+  flex-grow: 1;
+}
+.reconfigure-form .reconfigure-form-table .form-section-title .reconfigure-add-button {
+  padding: 0 10px;
+  min-width: 170px;
+}
+.reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--form-item {
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+.reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--toggle__switch {
+  margin-top: 3px;
+}
+.reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--btn--ghost {
+  outline: 0;
+  min-height: auto;
+  margin-top: 3px;
+}
+.reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--btn--ghost:hover, .reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--btn--ghost:active, .reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--btn--ghost:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.reconfigure-form .reconfigure-form-table .miq-data-table .cell .bx--btn--ghost span {
+  min-width: auto;
+  padding-left: 0px;
+  outline: 0;
+}
+
+.catalogs_form input[type=text] {
+  width: 220px;
+}
+.catalogs_form .no-padding {
+  padding: 0;
+}
+.catalogs_form .long_text {
+  width: 100% !important;
+}
+.catalogs_form .entry_point_selector {
+  padding: 3px;
+}
+.catalogs_form .entry_point_selector .entry_point_text, .catalogs_form .entry_point_selector .entry_point_button {
+  border-right: 0;
+}
+.catalogs_form .entry_point_selector span.input-group-addon {
+  visibility: hidden;
+}
+.catalogs_form .workflow_modal_wrapper {
+  min-height: 26px;
+  display: flex;
+  align-items: center;
+}
+.catalogs_form .workflows-entry-point-modal-body .miq-data-table {
+  margin-top: 0px;
+}
+
+.request-workflow-status .carbon-icons-style {
+  margin-right: 5px;
+}
+.request-workflow-status .carbon--CheckmarkOutline {
+  color: var(--green);
+}
+.request-workflow-status .carbon--MisuseOutline {
+  color: var(--red);
+}
+.request-workflow-status .carbon--PlayOutline {
+  color: var(--yellow);
+}
+.request-workflow-status .carbon--RetryFailed {
+  color: var(--red);
+}/*# sourceMappingURL=miq-data-table.css.map */

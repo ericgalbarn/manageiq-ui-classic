@@ -1,0 +1,11 @@
+.report-table-toolbar .bx--table-toolbar {
+  overflow: visible;
+  z-index: 300;
+}
+.report-table-toolbar .bx--table-toolbar .bx--toolbar-content {
+  justify-content: flex-start;
+}
+.report-table-toolbar .bx--table-toolbar .bx--toolbar-content .bx--dropdown__wrapper .bx--dropdown {
+  min-height: 48px;
+  min-width: 185px;
+}/*# sourceMappingURL=miq-table-toolbar.css.map */
