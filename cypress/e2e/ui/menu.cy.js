@@ -77,6 +77,7 @@ describe("Menu", () => {
       it("Requests", () => {
         cy.menu("Services", "Requests").expect_show_list_title("Requests");
       });
+
       it("Redirect", () => {
         cy.menu("Services", "Redirect").expect_show_list_title("Redirect");
       });
