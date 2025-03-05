@@ -74,8 +74,8 @@ describe("Menu", () => {
         );
       });
 
-      it("R", () => {
-        cy.menu("Services", "R").expect_show_list_title("R");
+      it("Requests", () => {
+        cy.menu("Services", "Requests").expect_show_list_title("Requests");
       });
 
       it("Redirect", () => {
