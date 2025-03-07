@@ -44,6 +44,7 @@ const MenuItem = forwardRef(
       >
         {__(title)}
       </SideNavMenuItem>
+      <SideNavMenuItem>New Button</SideNavMenuItem>
     );
   }
 );
