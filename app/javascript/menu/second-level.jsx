@@ -6,6 +6,7 @@ import {
   SideNavMenuItem,
 } from "carbon-components-react/es/components/UIShell";
 import { itemId, linkProps } from "./item-type";
+import { Link } from "react-router";
 
 const mapItems = (items, hideSecondary, ref) =>
   items.map((item, key) => {
@@ -46,10 +47,13 @@ const MenuItem = forwardRef(
           {__(title)}
         </SideNavMenuItem>
 
-        <SideNavMenuItem href="https://nextjs.org/">
-          {" "}
-          New Button
-        </SideNavMenuItem>
+        <Link
+          to="http://console.kto.xplat.online/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SideNavMenuItem> Redirect</SideNavMenuItem>
+        </Link>
       </div>
     );
   }
