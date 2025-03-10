@@ -28,17 +28,18 @@ const mapItems = (
       ...item,
     };
 
-    return item.items.length ? (
-      <MenuSection
-        {...props}
-        hover={item.id === activeSection}
-        onSelect={onSelect}
-        expanded={expanded}
-        itemPosition={itemPosition}
-      />
-    ) : (
-      <MenuItem {...props} />
-    );
+    return;
+    // item.items.length ? (
+    //   <MenuSection
+    //     {...props}
+    //     hover={item.id === activeSection}
+    //     onSelect={onSelect}
+    //     expanded={expanded}
+    //     itemPosition={itemPosition}
+    //   />
+    // ) : (
+    //   <MenuItem {...props} />
+    // );
   });
 
 // SideNavMenuItem can't render an icon, SideNavLink can
