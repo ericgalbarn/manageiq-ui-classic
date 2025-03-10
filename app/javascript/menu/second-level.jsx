@@ -44,7 +44,7 @@ const MenuItem = forwardRef(
       // >
       //   {__(title)}
       // </SideNavMenuItem>
-      <SideNavMenuItem> New Button</SideNavMenuItem>
+      <SideNavMenuItem href="https://nextjs.org/"> New Button</SideNavMenuItem>
     );
   }
 );
