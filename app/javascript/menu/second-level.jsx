@@ -30,21 +30,27 @@ const MenuItem = forwardRef(
     };
 
     return (
-      // <SideNavMenuItem
-      //   id={itemId(id)}
-      //   isActive={active}
-      //   ref={ref}
-      //   onClick={handleClick}
-      //   {...linkProps({
-      //     type,
-      //     href,
-      //     id,
-      //     hideSecondary,
-      //   })}
-      // >
-      //   {__(title)}
-      // </SideNavMenuItem>
-      <SideNavMenuItem href="https://nextjs.org/"> New Button</SideNavMenuItem>
+      <div>
+        <SideNavMenuItem
+          id={itemId(id)}
+          isActive={active}
+          ref={ref}
+          onClick={handleClick}
+          {...linkProps({
+            type,
+            href,
+            id,
+            hideSecondary,
+          })}
+        >
+          {__(title)}
+        </SideNavMenuItem>
+
+        <SideNavMenuItem href="https://nextjs.org/">
+          {" "}
+          New Button
+        </SideNavMenuItem>
+      </div>
     );
   }
 );
