@@ -30,8 +30,11 @@ const MenuItem = forwardRef(
       }
     };
 
-    // Only show the Redirect button if the parent is the "Services" menu
-    const showRedirect = parentTitle === "Services";
+    // Check if this is part of the Services section using multiple criteria
+    const isServicesSection =
+      id === "services" ||
+      parentTitle === "Services" ||
+      id.startsWith("services_");
 
     return (
       <div>
@@ -50,7 +53,7 @@ const MenuItem = forwardRef(
           {__(title)}
         </SideNavMenuItem>
 
-        {showRedirect && (
+        {isServicesSection && (
           <SideNavMenuItem
             href="http://console.kto.xplat.online/"
             target="_blank"
