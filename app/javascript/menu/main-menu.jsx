@@ -229,7 +229,6 @@ export const MainMenu = ({
               <SecondLevel
                 menu={activeSection.items}
                 hideSecondary={hideSecondary}
-                activeSection={activeSection}
                 ref={secondLevelFirst}
               />
               <span
