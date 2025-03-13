@@ -1,18 +1,19 @@
-import React, { useEffect, useState, useRef } from 'react';
-import PropTypes from 'prop-types';
-import { SideNav } from 'carbon-components-react/es/components/UIShell';
+import React, { useEffect, useState, useRef } from "react";
+import PropTypes from "prop-types";
+import { SideNav } from "carbon-components-react/es/components/UIShell";
 
-import FirstLevel from './first-level';
-import GroupSwitcher from './group-switcher';
-import MenuCollapse from './menu-collapse';
-import MenuSearch from './search';
-import MiqLogo from './miq-logo';
-import SearchResults from './search-results';
-import SecondLevel from './second-level';
-import Username from './username';
-import { updateActiveItem } from './history';
+import FirstLevel from "./first-level";
+import GroupSwitcher from "./group-switcher";
+import MenuCollapse from "./menu-collapse";
+import MenuSearch from "./search";
+import MiqLogo from "./miq-logo";
+import SearchResults from "./search-results";
+import SecondLevel from "./second-level";
+import Username from "./username";
+import { updateActiveItem } from "./history";
 
-const initialExpanded = window.localStorage.getItem('patternfly-navigation-primary') !== 'collapsed';
+const initialExpanded =
+  window.localStorage.getItem("patternfly-navigation-primary") !== "collapsed";
 
 export const MainMenu = ({
   applianceName,
@@ -34,11 +35,11 @@ export const MainMenu = ({
   const [activeSection, setSection] = useState(null);
   const [openMenu, setOpen] = useState(false);
   // code to override navbar in plugins
-  const Navbar = ManageIQ.component.getReact('menu.Navbar');
+  const Navbar = ManageIQ.component.getReact("menu.Navbar");
 
   const appearExpanded = expanded || !!activeSection || !!searchResults;
   const hideSecondary = () => setSection(null);
-  const hideSecondaryEscape = e => e.keyCode === 27 && hideSecondary();
+  const hideSecondaryEscape = (e) => e.keyCode === 27 && hideSecondary();
 
   const secondLevelFirst = useRef(undefined);
   const firstLevelNext = useRef(undefined);
@@ -46,14 +47,17 @@ export const MainMenu = ({
 
   useEffect(() => {
     // persist expanded state
-    window.localStorage.setItem('patternfly-navigation-primary', expanded ? 'expanded' : 'collapsed');
+    window.localStorage.setItem(
+      "patternfly-navigation-primary",
+      expanded ? "expanded" : "collapsed"
+    );
   }, [expanded]);
 
   useEffect(() => {
     // set body class - for content offset
     const classNames = {
-      true: 'miq-main-menu-expanded',
-      false: 'miq-main-menu-collapsed',
+      true: "miq-main-menu-expanded",
+      false: "miq-main-menu-collapsed",
     };
     document.body.classList.remove(classNames[!appearExpanded]);
     document.body.classList.add(classNames[appearExpanded]);
@@ -146,7 +150,7 @@ export const MainMenu = ({
         id="main-menu-primary"
       >
         <SideNav
-          aria-label={__('Main Menu')}
+          aria-label={__("Main Menu")}
           className="primary"
           expanded={appearExpanded}
           addFocusListeners={false}
@@ -200,7 +204,7 @@ export const MainMenu = ({
 
           {showMenuCollapse && (
             <MenuCollapse
-              expanded={expanded/* not appearExpanded */}
+              expanded={expanded /* not appearExpanded */}
               toggle={toggleMenu}
               onFocus={hideSecondary}
               open={openMenu}
@@ -208,13 +212,31 @@ export const MainMenu = ({
           )}
         </SideNav>
       </div>
-      { activeSection && (
+      {activeSection && (
         <>
-          <SideNav aria-label={__('Secondary Menu')} className="secondary" isChildOfHeader={false} expanded>
+          <SideNav
+            aria-label={__("Secondary Menu")}
+            className="secondary"
+            isChildOfHeader={false}
+            expanded
+          >
             <div onKeyDown={hideSecondaryEscape} role="presentation">
-              <span onFocus={unFocusSecondary(false)} role="presentation" tabIndex="0" />
-              <SecondLevel menu={activeSection.items} hideSecondary={hideSecondary} ref={secondLevelFirst} />
-              <span onFocus={unFocusSecondary(true)} role="presentation" tabIndex="0" />
+              <span
+                onFocus={unFocusSecondary(false)}
+                role="presentation"
+                tabIndex="0"
+              />
+              <SecondLevel
+                menu={activeSection.items}
+                hideSecondary={hideSecondary}
+                parentId={activeSection.id}
+                ref={secondLevelFirst}
+              />
+              <span
+                onFocus={unFocusSecondary(true)}
+                role="presentation"
+                tabIndex="0"
+              />
             </div>
           </SideNav>
           <div

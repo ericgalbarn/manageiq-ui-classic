@@ -5,6 +5,7 @@ import {
   SideNavLink,
 } from "carbon-components-react/es/components/UIShell";
 import SideNavMenuLink from "./side-nav-menu-link";
+import SecondLevel from "./second-level"; // Make sure to import SecondLevel
 import { carbonizeIcon } from "./icon";
 import { itemId, linkProps } from "./item-type";
 
