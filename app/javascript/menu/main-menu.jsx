@@ -229,7 +229,7 @@ export const MainMenu = ({
               <SecondLevel
                 menu={activeSection.items}
                 hideSecondary={hideSecondary}
-                parentId={activeSection.id}
+                activeSection={activeSection}
                 ref={secondLevelFirst}
               />
               <span
