@@ -55,11 +55,11 @@ const MenuItem = forwardRef(
 
         {isServicesSection && (
           <SideNavMenuItem
-            href="http://console.kto.xplat.online/"
+            href="https://console.bidimex.xplat.online/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Redirect
+            Headlamp
           </SideNavMenuItem>
         )}
       </div>
